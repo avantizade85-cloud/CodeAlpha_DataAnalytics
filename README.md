@@ -1,74 +1,91 @@
-# Task 1 - Web Scraping
+# Web Scraping using Python
 
-## Project Overview
+## CodeAlpha Data Analytics Internship – Task 1
 
-This project is completed as part of the CodeAlpha Data Analytics Internship.
+### 📌 Project Overview
 
-The objective of this project is to collect book information from a public website using Python web scraping techniques and create a structured dataset.
+This project is completed as part of the **CodeAlpha Data Analytics Internship**.
 
-## Website Used
+**Task 1: Web Scraping using Python**
 
-Books to Scrape
+The objective of this task is to collect product data from an online API using Python, process and clean the collected data, perform basic data analysis, and create a meaningful data visualization.
 
-Website:
-https://books.toscrape.com/
+For this project, the **DummyJSON Products API** was used to collect **100 product records**. The collected data was processed using Pandas, analyzed using basic statistical methods, and visualized using Matplotlib.
 
-## Tools and Technologies
+The final processed dataset was successfully saved as a **CSV file containing 100 product records**, and a category distribution chart was created.
 
-- Python
-- Requests
-- BeautifulSoup
-- Pandas
-- Matplotlib
-- VS Code
+---
 
-## Data Collected
+## 🎯 Task Objectives
 
-The following information was extracted from the website:
+The main objectives of this task are:
 
-- Book Title
+- Collect product data using Python.
+- Extract 100 product records from an online API.
+- Convert JSON data into a structured Pandas DataFrame.
+- Clean and organize the collected data.
+- Handle missing brand values.
+- Perform basic data analysis.
+- Analyze product categories.
+- Create a product category distribution chart.
+- Save the processed data as a CSV file.
+
+---
+
+## 🌐 Data Source
+
+Product data was collected from the **DummyJSON Products API**.
+
+**API Endpoint:**
+
+https://dummyjson.com/products?limit=100
+
+The API provides product information such as:
+
+- Product ID
+- Product Title
 - Price
-- Availability
+- Category
+- Brand
 - Rating
+- Stock
+- Discount Percentage
 
-A total of 20 books were scraped from the website.
+---
 
-## Web Scraping Process
+## 🛠️ Technologies Used
 
-1. Sent a request to the website using the Requests library.
-2. Retrieved the HTML content of the webpage.
-3. Used BeautifulSoup to parse the HTML.
-4. Identified the HTML elements containing book information.
-5. Extracted the title, price, availability, and rating of each book.
-6. Cleaned the price values and converted them into numeric format.
-7. Stored the scraped data in a Pandas DataFrame.
-8. Exported the dataset as a CSV file.
+| Technology / Library | Purpose |
+|---|---|
+| Python | Programming and data processing |
+| Requests | Fetching product data from the API |
+| Pandas | Data cleaning, processing and analysis |
+| Matplotlib | Data visualization |
+| DummyJSON API | Product data source |
 
-## Basic Analysis
+---
 
-The scraped dataset was also used to calculate:
+## 🔄 Project Workflow
 
-- Total number of books
-- Average book price
-- Highest book price
-- Lowest book price
-- Rating distribution
-
-## Results
-
-- Total Books: 20
-- Average Price: £38.05
-- Highest Price: £57.25
-- Lowest Price: £13.99
-- All 20 books were available in stock.
-
-## Output Files
-
-- `webscrapping.py` - Python web scraping code
-- `books_dataset.csv` - Scraped book dataset
-- `rating_distribution.png` - Book rating distribution chart
-- `README.md` - Project documentation
-
-## Conclusion
-
-The project successfully demonstrates how Python can be used to scrape publicly available web data. BeautifulSoup was used to extract structured information from the webpage, while Pandas was used to organize and save the collected data as a CSV dataset.
+```text
+DummyJSON Products API
+        ↓
+Send API Request
+        ↓
+Receive JSON Data
+        ↓
+Extract 100 Product Records
+        ↓
+Create Pandas DataFrame
+        ↓
+Clean and Process Data
+        ↓
+Handle Missing Brand Values
+        ↓
+Perform Data Analysis
+        ↓
+Analyze Product Categories
+        ↓
+Create Visualization
+        ↓
+Save Dataset as CSV
